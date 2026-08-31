@@ -1,0 +1,27 @@
+:host {
+  display: block;
+  font-family: var(--font-body, 'Inter', system-ui, sans-serif);
+}
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.chip {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--color-border, #e3ddd0);
+  background: var(--color-surface, #fff);
+  font-size: 0.85rem;
+  cursor: pointer;
+  color: var(--color-text, #2a2622);
+}
+.chip.active {
+  background: var(--color-accent, #3f6c51);
+  border-color: var(--color-accent, #3f6c51);
+  color: #fff;
+}
+.chip:focus-visible {
+  outline: 2px solid var(--color-accent, #3f6c51);
+  outline-offset: 1px;
+}

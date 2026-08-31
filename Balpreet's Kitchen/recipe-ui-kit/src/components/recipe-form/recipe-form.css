@@ -1,0 +1,58 @@
+:host {
+  display: block;
+  font-family: var(--font-body, 'Inter', system-ui, sans-serif);
+}
+.recipe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.85rem;
+  color: var(--color-text-muted, #6b6357);
+}
+input, textarea {
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 9px 12px;
+  border: 1px solid var(--color-border, #e3ddd0);
+  border-radius: var(--radius-sm, 6px);
+  color: var(--color-text, #2a2622);
+  resize: vertical;
+}
+input:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--color-accent, #3f6c51);
+  outline-offset: 1px;
+}
+.error {
+  color: var(--color-danger, #b5533c);
+  font-size: 0.85rem;
+  margin: 0;
+}
+.actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+button {
+  padding: 9px 18px;
+  border-radius: var(--radius-sm, 6px);
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+button.primary {
+  background: var(--color-accent, #3f6c51);
+  color: #fff;
+}
+button.primary:hover {
+  background: var(--color-accent-dark, #2e4f3b);
+}
+button.ghost {
+  background: transparent;
+  border-color: var(--color-border, #e3ddd0);
+  color: var(--color-text, #2a2622);
+}

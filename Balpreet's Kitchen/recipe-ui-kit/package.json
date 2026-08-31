@@ -1,0 +1,35 @@
+{
+  "name": "@balpreet-nagarro/recipe-ui-kit",
+  "version": "0.1.1",
+  "description": "Reusable UI components for Balpreet's Kitchen Recipe Finder & Meal Planner app, built with StencilJS.",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/recipe-ui-kit/recipe-ui-kit.esm.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "stencil build",
+    "prepack": "npm run build",
+    "start": "stencil build --dev --watch --serve",
+    "generate": "stencil generate"
+  },
+  "devDependencies": {
+    "@stencil/core": "^4.20.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "stencil",
+    "web-components",
+    "recipe",
+    "ui-kit",
+    "svelte"
+  ],
+  "author": "Balpreet Singh - Nagarro - 3201228"
+}

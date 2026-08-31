@@ -1,0 +1,27 @@
+:host {
+  display: inline-block;
+  --_gold: var(--color-gold, #d9a441);
+}
+.stars {
+  display: flex;
+  gap: 2px;
+}
+.star {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 1.25rem;
+  color: var(--color-border, #e3ddd0);
+  cursor: pointer;
+  line-height: 1;
+}
+.star:disabled {
+  cursor: default;
+}
+.star.filled {
+  color: var(--_gold);
+}
+.star:focus-visible {
+  outline: 2px solid var(--_gold);
+  outline-offset: 2px;
+}
